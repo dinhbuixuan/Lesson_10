@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="play()">Đoán!</button>
+    <script>
+
+
+        function play() {
+            let count = 0;
+            let turn = 0;
+            let secretNumber = Math.floor(Math.random() * 100);
+            let a; 
+
+            do {
+                a = prompt("Nhập vào số đề mà bạn đã chọn");
+                count++;
+                turn++;
+                if(a == secretNumber) {
+                    alert(`Bạn đã đoán đúng rồi sau ${count} lượt`);
+                    break;
+                } 
+                if(turn >= 3){
+                    alert("Bạn đã hết lượt chơi");
+                    break;
+                }
+            }while(a != secretNumber);
+        }
+        play();
+    </script>
+</body>
+
+</html>
