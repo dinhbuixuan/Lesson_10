@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chia7() {
+            let count = 1;
+            let num =1;
+            let sum = 0;
+            while(count <= 30){
+                if(num % 7 == 0){
+                    document.write(num + "<br>");
+                    count++;
+                    sum += num;
+                }
+                num++;
+            }
+            document.write("Tổng của 30 số đầu tiên chia hết cho 7 là :" + sum);
+        }
+        chia7();
+        // let count = 1;
+        // let num = 1;
+        // let sum = 0;
+
+        // while (count <= 30) {
+        //     if (num % 7 == 0) {
+        //         document.write(num + " </br>")
+        //         count++;
+        //         sum += num;
+        //     }
+        //     num++;
+        // }
+        // document.write("<br>");
+        // document.write("Tổng: " + sum);
+    </script>
+</body>
+</html>
