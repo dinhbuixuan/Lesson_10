@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function TotalNumber(){
+            let a = +prompt("Nhập vào số a");
+            let b = +prompt("Nhập vào số b");
+            let sum = 0;
+            if(a == b){
+                alert("2 số không được bằng nhau");
+            }
+            if(a < b){
+                while(a <= b) {
+                    document.write(a + ",") 
+                    a++;
+                    sum += a;
+                }
+                
+            }
+            document.write("<br>")
+            document.write("Tổng: " + sum);
+        }
+        TotalNumber();
+    </script>
+</body>
+</html>
